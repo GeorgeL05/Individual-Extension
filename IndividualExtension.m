@@ -1,9 +1,9 @@
 clear; clc;
 
 %% Parameters
-U0 = 2000;
+U0 = 2.5;
 Lx = 100000;
-Nsquare = 1;
+Nsquare = 0.0004;
 H  = 800;
 Nx = 16384;
 Nz = 101;
@@ -132,4 +132,5 @@ xlim([23,27]);
 xlabel('x (km)');
 ylabel('z (m)');
 title("w")
+
 colorbar;
