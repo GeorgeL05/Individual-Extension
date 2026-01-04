@@ -4,7 +4,7 @@ clear; clc;
 U0 = 2.5;
 Lx = 100000;
 Nsquare = 0.0004;
-H  = 800;
+H  = 1000;
 Nx = 16384;
 Nz = 101;
 
@@ -15,7 +15,7 @@ dz = z(2) - z(1);
 %% Turbine forcing f_x(x,z)
 A    = 50;
 x0   = Lx/4;
-z0   = 150;
+z0   = 600;
 sigx = 50;
 sigz = 40;
 
@@ -132,5 +132,4 @@ xlim([23,27]);
 xlabel('x (km)');
 ylabel('z (m)');
 title("w")
-
 colorbar;
